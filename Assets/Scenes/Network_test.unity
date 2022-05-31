@@ -209,7 +209,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694890687}
   m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 7.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f1176ca86622daa98939cf85d366521, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /zed/zed_node/point_cloud/cloud_registered
+  Topic: /husky2/filtered_pc
   TimeStep: 0
 --- !u!114 &1331044289
 MonoBehaviour:
