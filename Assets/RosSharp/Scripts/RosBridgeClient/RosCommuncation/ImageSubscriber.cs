@@ -36,6 +36,7 @@ namespace RosSharp.RosBridgeClient
         {
             if (isMessageReceived)
                 ProcessMessage();
+                // Debug.Log(Time.deltaTime);
         }
 
         protected override void ReceiveMessage(MessageTypes.Sensor.CompressedImage compressedImage)

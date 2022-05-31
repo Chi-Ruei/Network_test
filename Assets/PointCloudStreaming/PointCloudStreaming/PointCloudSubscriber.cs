@@ -36,8 +36,10 @@ namespace RosSharp.RosBridgeClient
 
             if (isMessageReceived)
             {
+                // Debug.Log(Time.deltaTime);
                 PointCloudRendering();
                 isMessageReceived = false;
+                // Debug.Log(Time.deltaTime);
             }
 
 
@@ -90,8 +92,8 @@ namespace RosSharp.RosBridgeClient
                 y_posi = n * point_step + 4;
                 z_posi = n * point_step + 8;
 
-                x = BitConverter.ToSingle(byteArray, x_posi);
-                y = BitConverter.ToSingle(byteArray, y_posi);
+                y = BitConverter.ToSingle(byteArray, x_posi);
+                x = BitConverter.ToSingle(byteArray, y_posi);
                 z = BitConverter.ToSingle(byteArray, z_posi);
 
 
@@ -105,7 +107,7 @@ namespace RosSharp.RosBridgeClient
                 g = g / rgb_max;
                 b = b / rgb_max;
 
-                pcl[n] = new Vector3(x, z, y);
+                pcl[n] = new Vector3(-x, z, y);
                 pcl_color[n] = new Color(r, g, b);
 
 
